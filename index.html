@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Covid-19 estimator">
+  <title>Covid-19 Estmator</title>
+    <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+</head>
+<style>
+ * {
+  font-family: 'Open sans', sans-serif !important;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e4eeff;
+  font-size: 1rem;
+}
+#logo > h3 {
+  color: #0063ff;
+  font-size: 2.5rem;
+}
+.container {
+  min-height: 400px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  width: 550px;
+  position: relative;
+  border-radius: .5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+}
+.form-input {
+  margin: 10px 0;
+  width: 100%;
+}
+.form-input input {
+  border: 1px solid #cccccc;
+  border-radius: .25rem;
+  width: 100%;
+  height: 32px;
+  padding: 10px;
+  font-size: 0.875rem;
+  margin: .25rem 0;
+}
+.form-input label {
+  color: #333333;
+  font-size: .875rem;
+}
+input:focus,
+input:active {
+  outline: none;
+}
+button {
+  background-color: #0063ff;
+  color: #fff;
+  font-weight: bold;
+  padding: .5rem 0;
+  margin: 15px 0;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: .5rem;
+}
+.option {
+  margin: 5px 0;
+}
+.option input[type="radio"] {
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 2rem);
+  }
+}
+</style>
+<body>
+  <div id="logo">
+    <h3>Covid-19 Estimator</h3>
+  </div>
+  <div class="container">
+    <form action="">
+      <div class="form-input">
+        <label for="population">Population</label>
+        <input id="population" type="text" name="population" data-population="" placeholder="Population">
+      </div>
+      <div class="form-input">
+        <label for="timeElapse">Time Elapse</label>
+        <input id="timeElapse" type="number"  name="timeElapse" data-time-to-elapse="[days, weeks, year]" placeholder="Time Elapse">
+      </div>
+      <div class="form-input">
+        <label for="reportedCases">Number of Reported Cases</label>
+        <input id="reportedCases" type="number" data-reported-cases="" name="noOfReportedCases" placeholder="0">
+      </div>
+      <div class="form-input">
+        <label for="availableBeds">Number of Available Beds</label>
+        <input id="availableBeds" type="number" data-total-hopital-bed="" name="noOfAvailableBed" placeholder="0">
+      </div>
+      <div class="option">
+        <input type="radio" name="period" id="day" />
+        <label for="day">Day</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="period" id="week" />
+      <label for="week">Week</label>
+      </div>
+      <div>
+        <input type="radio" name="period" id="year" />
+        <label for="year">Year</label>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </div>
+  <footer>
+    <p>
+      Copyright 2020
+    </p>
+  </footer>
+</body>
+</html>
