@@ -112,21 +112,21 @@ button {
       </div>
       <div class="form-input">
         <label for="availableBeds">Number of Available Beds</label>
-        <input id="availableBeds" type="number" data-total-hopital-bed="" name="noOfAvailableBed" placeholder="0">
+        <input id="availableBeds" type="number" data-total-hopital-beds="" name="noOfAvailableBed" placeholder="0">
       </div>
       <div class="option">
         <input type="radio" name="period" id="day" />
         <label for="day">Day</label>
       </div>
       <div class="option">
-        <input type="radio" name="period" id="week" />
+        <input type="radio" name="period" data-period-type id="week" />
       <label for="week">Week</label>
       </div>
       <div>
         <input type="radio" name="period" id="year" />
         <label for="year">Year</label>
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" data-go-estimate=''>Submit</button>
       <!-- <button>Submit</button> -->
     </form>
   </div>
