@@ -115,16 +115,12 @@ button {
         <input id="totalHospitalBeds" type="number" data-total-hospital-beds="" name="noOfAvailableBed" placeholder="0">
       </div>
       <div class="option">
-        <input type="radio" id="days" name="periodType[days, weeks, months]" data-period-type ="" />
-        <label for="days">days</label>
-      </div>
-      <div class="option">
-        <input type="radio" id="weeks" name="period" />
-      <label for="weeks">weeks</label>
-      </div>
-      <div>
-        <input type="radio" name="period" id="months"  />
-        <label for="months">months</label>
+        <label for="data-period-type">Period Type:</label><br>
+        <select data-period-type="periodType" name ="PeriodType" id="data-period-type" required>
+            <option value="Days">Days</option>
+            <option value="Weeks">Weeks</option>
+            <option value="Months">Months</option>
+        </select>
       </div>
       <button type="submit" data-go-estimate=''>Submit</button>
       <!-- <button>Submit</button> -->
