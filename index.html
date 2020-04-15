@@ -111,20 +111,20 @@ button {
         <input id="reportedCases" type="number" data-reported-cases="" name="noOfReportedCases" placeholder="0">
       </div>
       <div class="form-input">
-        <label for="availableBeds">Number of Available Beds</label>
-        <input id="availableBeds" type="number" data-total-hopital-beds="" name="noOfAvailableBed" placeholder="0">
+        <label for="totalHospitalBeds">Number of Available Beds</label>
+        <input id="totalHospitalBeds" type="number" data-total-hopital-beds="" name="noOfAvailableBed" placeholder="0">
       </div>
       <div class="option">
-        <input type="radio" name="period" id="day" />
-        <label for="day">Day</label>
+        <input type="radio" id="periodType" name="period" data-period-type ="[days, weeks, months]" id="day" />
+        <label for="periodType" >days</label>
       </div>
       <div class="option">
-        <input type="radio" name="period" data-period-type id="week" />
-      <label for="week">Week</label>
+        <input type="radio" id="periodType" name="period" data-period-type ="[days, weeks, months]" />
+      <label for="periodType">weeks</label>
       </div>
       <div>
-        <input type="radio" name="period" id="year" />
-        <label for="year">Year</label>
+        <input type="radio" name="period" id="periodType" data-period-type ="[days, weeks, months]" id="year" />
+        <label for="periodType">months</label>
       </div>
       <button type="submit" data-go-estimate=''>Submit</button>
       <!-- <button>Submit</button> -->
